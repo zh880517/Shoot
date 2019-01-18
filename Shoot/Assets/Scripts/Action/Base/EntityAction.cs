@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EntityType
+public class EntityAction
 {
-    Player,
-    Enemy,
-    Mineral,
+    public int ID;
+    public float Time;
 }

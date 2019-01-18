@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 public static class ActionToType
 {
-    private static readonly Dictionary<ActionType, Type> typeMap = new Dictionary<ActionType, Type>()
+    private static readonly Dictionary<EntityActionType, Type> typeMap = new Dictionary<EntityActionType, Type>()
     {
 
     };
 
-    public static Type TypeToClassType(ActionType type)
+    public static Type TypeToClassType(EntityActionType type)
     {
         typeMap.TryGetValue(type, out Type classType);
         return classType;
