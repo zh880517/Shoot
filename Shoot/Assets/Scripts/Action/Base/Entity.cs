@@ -6,7 +6,13 @@ public class Entity
 {
     public GameObject Obj { get; private set; }
     public int ID { get; private set; }
-    
+
+    public Entity(int id, GameObject obj)
+    {
+        ID = id;
+        Obj = obj;
+    }
+
     private readonly Dictionary<Type, IActionHandler> handlers = new Dictionary<Type, IActionHandler>();
     public void DOAction(EntityAction action)
     {
